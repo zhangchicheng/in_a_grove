@@ -4,4 +4,12 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-bevy = "0.17.2"
+bevy = { version = "0.17.2", features = ["wav"] }
+bevy_aseprite_ultra = { path = "../bevy_aseprite_ultra" }
+bevy_asset_loader = "0.24.0-rc.1"
+bevy_ecs_tiled = { version = "0.10", default-features = false, features = ["render", "png", "physics"] }
+bevy_modern_pixel_camera = "0.4.0"
+leafwing-input-manager = "0.19.0"
+thiserror = "1.0"
+tiled = { version = "0.15", features = ["world"] }
+

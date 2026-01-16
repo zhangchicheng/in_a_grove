@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="6" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="13">
+ <tileset firstgid="1" source="../tilesets/terrain.tsx"/>
+ <tileset firstgid="3" source="../tilesets/bamboo.tsx"/>
+ <tileset firstgid="4" source="../tilesets/lamp.tsx"/>
+ <tileset firstgid="5" source="../tilesets/statue.tsx"/>
+ <tileset firstgid="6" source="../tilesets/torii.tsx"/>
+ <imagelayer id="5" name="Image Layer 4" parallaxx="0" repeatx="1">
+  <image source="../textures/bg/4.png" width="320" height="180"/>
+ </imagelayer>
+ <imagelayer id="4" name="Image Layer 3" parallaxx="0.2" repeatx="1">
+  <image source="../textures/bg/3.png" width="320" height="180"/>
+ </imagelayer>
+ <imagelayer id="3" name="Image Layer 2" parallaxx="0.5" repeatx="1">
+  <image source="../textures/bg/2.png" width="320" height="180"/>
+ </imagelayer>
+ <imagelayer id="2" name="Image Layer 1" repeatx="1">
+  <image source="../textures/bg/1.png" width="320" height="180"/>
+ </imagelayer>
+ <objectgroup id="6" name="Object Layer 1">
+  <object id="2" gid="6" x="124" y="148" width="77" height="70"/>
+  <object id="6" gid="4" x="204" y="148" width="16" height="32"/>
+  <object id="7" gid="4" x="108" y="148" width="16" height="32"/>
+  <object id="8" gid="5" x="272" y="148" width="38" height="54"/>
+  <object id="9" gid="3" x="380" y="148" width="128" height="116"/>
+ </objectgroup>
+ <objectgroup id="8" name="Object Layer 2">
+  <object id="11" gid="2" x="0" y="180" width="640" height="32"/>
+ </objectgroup>
+ <objectgroup id="9" name="Environment">
+  <object id="12" type="SoundEmitter" x="160" y="128" visible="0">
+   <properties>
+    <property name="audio_path" value="sounds/nature_sound/Ambiance_Forest_Birds_Loop_Stereo.wav"/>
+    <property name="loop" type="bool" value="true"/>
+    <property name="radius" type="float" value="300"/>
+    <property name="volume" type="float" value="0.6"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
